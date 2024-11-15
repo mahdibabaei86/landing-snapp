@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./cdns/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="./cdns/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="./cdns/all.min.js"
+      integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- <link rel="stylesheet" href="./output.css" /> -->
+    <link rel="stylesheet" href="./styles.css" />
+    <title>سوپر اپلیکیشن اسنپ</title>
+  </head>
+  <body class="font-iransans w-full">
+    <header
+      class="flex items-center justify-between md:justify-start md:h-20 shadow-sm md:p-5 h-16 w-full"
+    >
+      <img
+        src="./images/logo.png"
+        class="w-[90px] h-[32px] object-center ml-6"
+      />
+
+      <div class="block md:hidden text-black -order-1 pr-6 pt-2 text-2xl">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <nav class="hidden md:block">
+        <ul
+          class="font-iransans flex items-center gap-x-6 *:cursor-pointer *:text-gray-700"
+        >
+          <li>سوپر اپ اسنپ</li>
+          <li>ثبت نام راننده اسنپ</li>
+          <li>باشگاه رانندگان</li>
+          <li>پنل سازمانی</li>
+          <li>بلاگ</li>
+          <li>درباره اسنپ</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="flex w-full h-[266px] md:h-[60vh]">
+      <div
+        class="w-[50%] h-[100%] bg-[url(./images/intro_desktop.jpg)] order-1 bg-center bg-cover transform scale-x-[-1] hidden md:block"
+      ></div>
+      <div
+        class="flex flex-col gap-7 md:gap-4 w-[100%] md:w-[50%] h-[100%] py-[11px] text-wrap px-[11px] bg-snapp md:py-[32px] md:px-[27px] md:pr-[50px] lg:pr[127px] text-right"
+      >
+        <h1
+          class="text-white pt-2 text-[21px] md:text-[32px] leading-normal w-full md:w-[395px]"
+        >
+          تجربه‌ی زندگی راحت‌تر، سریع‌تر و به‌صرفه‌تر با سوپراپلیکیشن اسنپ!
+        </h1>
+        <p
+          class="text-white leading-normal md:text-lg text-sm md:mt-6 md:w-[450px]"
+        >
+          از درخواست خودرو گرفته تا سفارش غذا، خرید سوپرمارکتی، خرید بلیط سفر،
+          رزرو هتل و... را میتوانید با اسنپ انجام دهید.
+        </p>
+        <div class="items-center mt-6 hidden md:flex">
+          <input
+            type="tel"
+            placeholder="09xxxx2673"
+            dir="rtl"
+            class="border-b-2 border-gray-300 outline-none p-2 bg-transparent text-white placeholder:text-white"
+          />
+          <button
+            class="text-snapp bg-white outline-none border-none font-bold text-sm p-2 rounded-lg w-[121px] mr-4"
+          >
+            ارسال اینک
+          </button>
+        </div>
+        <button
+          class="md:text-white bg-white md:bg-transparent text-black p-3 w-full border-[1px] rounded-lg md:w-[242px] h-[48px] text-[14px] md:hover:bg-[#38B369] transition-all mt-5"
+        >
+          ورود به اپلیکیشن اسنپ
+        </button>
+      </div>
+    </div>
+    <div class="hidden w-full mx-auto py-5 h-[200px] md:flex items-center">
+      <div
+        class="w-[90%] flex *:cursor-pointer items-center justify-around mx-auto"
+      >
+        <img src="./images/myketmarket.png" class="w-[160px] h-[47px]" alt="" />
+        <img src="./images/app_store.svg" class="w-36" alt="" />
+        <img src="./images/snapp-pwa.png" class="w-[160px] h-[47px]" alt="" />
+        <img
+          src="./images/direct-download-badge.png"
+          class="w-[160px] h-[47px]"
+          alt=""
+        />
+        <img src="./images/bazaar.png" class="w-[160px] h-[47px]" alt="" />
+      </div>
+    </div>
+    <div class="bg-[#F2F5F8] py-10">
+      <h1
+        class="text-center text-1xl md:text-3xl font-bold text-gray-700 mb-11"
+      >
+        یک اپلیکیشن، برای تمام نیازها
+      </h1>
+      <div class="w-[100%] px-4 md:px-20 flex justify-center">
+        <div class="flex flex-wrap justify-around gap-6 w-[1000px]">
+          <div
+            class="flex flex-col bg-white p-4 md:p-2 rounded-xl cursor-pointer sm:w-[120px] md:w-[295px] sm:h-auto md:flex-row md:h-[90px] items-center"
+          >
+            <img
+              src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/taxi.svg"
+              class="w-[62px]"
+            />
+            <div class="flex flex-col md:mr-4">
+              <span class="font-bold md:text-base text-sm">تاکسی اینترنتی</span>
+              <span class="text-gray-600 text-sm pt-1 hidden md:block"
+                >درخواست آنلاین خودرو</span
+              >
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-white p-4 md:p-2 rounded-xl cursor-pointer sm:w-[120px] md:w-[295px] sm:h-auto md:flex-row md:h-[90px] items-center"
+          >
+            <img
+              src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/taxi.svg"
+              class="w-[62px]"
+            />
+            <div class="flex flex-col md:mr-4">
+              <span class="font-bold md:text-base text-sm">تاکسی اینترنتی</span>
+              <span class="text-gray-600 text-sm pt-1 hidden md:block"
+                >درخواست آنلاین خودرو</span
+              >
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-white p-4 md:p-2 rounded-xl cursor-pointer sm:w-[120px] md:w-[295px] sm:h-auto md:flex-row md:h-[90px] items-center"
+          >
+            <img
+              src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/taxi.svg"
+              class="w-[62px]"
+            />
+            <div class="flex flex-col md:mr-4">
+              <span class="font-bold md:text-base text-sm">تاکسی اینترنتی</span>
+              <span class="text-gray-600 text-sm pt-1 hidden md:block"
+                >درخواست آنلاین خودرو</span
+              >
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-white p-4 md:p-2 rounded-xl cursor-pointer sm:w-[120px] md:w-[295px] sm:h-auto md:flex-row md:h-[90px] items-center"
+          >
+            <img
+              src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/taxi.svg"
+              class="w-[62px]"
+            />
+            <div class="flex flex-col md:mr-4">
+              <span class="font-bold md:text-base text-sm">تاکسی اینترنتی</span>
+              <span class="text-gray-600 text-sm pt-1 hidden md:block"
+                >درخواست آنلاین خودرو</span
+              >
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-white p-4 md:p-2 rounded-xl cursor-pointer sm:w-[120px] md:w-[295px] sm:h-auto md:flex-row md:h-[90px] items-center"
+          >
+            <img
+              src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/taxi.svg"
+              class="w-[62px]"
+            />
+            <div class="flex flex-col md:mr-4">
+              <span class="font-bold md:text-base text-sm">تاکسی اینترنتی</span>
+              <span class="text-gray-600 text-sm pt-1 hidden md:block"
+                >درخواست آنلاین خودرو</span
+              >
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-white p-4 md:p-2 rounded-xl cursor-pointer sm:w-[120px] md:w-[295px] sm:h-auto md:flex-row md:h-[90px] items-center"
+          >
+            <img
+              src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/taxi.svg"
+              class="w-[62px]"
+            />
+            <div class="flex flex-col md:mr-4">
+              <span class="font-bold md:text-base text-sm">تاکسی اینترنتی</span>
+              <span class="text-gray-600 text-sm pt-1 hidden md:block"
+                >درخواست آنلاین خودرو</span
+              >
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-white p-4 md:p-2 rounded-xl cursor-pointer sm:w-[120px] md:w-[295px] sm:h-auto md:flex-row md:h-[90px] items-center"
+          >
+            <img
+              src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/taxi.svg"
+              class="w-[62px]"
+            />
+            <div class="flex flex-col md:mr-4">
+              <span class="font-bold md:text-base text-sm">تاکسی اینترنتی</span>
+              <span class="text-gray-600 text-sm pt-1 hidden md:block"
+                >درخواست آنلاین خودرو</span
+              >
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-white p-4 md:p-2 rounded-xl cursor-pointer sm:w-[120px] md:w-[295px] sm:h-auto md:flex-row md:h-[90px] items-center"
+          >
+            <img
+              src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/taxi.svg"
+              class="w-[62px]"
+            />
+            <div class="flex flex-col md:mr-4">
+              <span class="font-bold md:text-base text-sm">تاکسی اینترنتی</span>
+              <span class="text-gray-600 text-sm pt-1 hidden md:block"
+                >درخواست آنلاین خودرو</span
+              >
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-white p-4 md:p-2 rounded-xl cursor-pointer sm:w-[120px] md:w-[295px] sm:h-auto md:flex-row md:h-[90px] items-center"
+          >
+            <img
+              src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/taxi.svg"
+              class="w-[62px]"
+            />
+            <div class="flex flex-col md:mr-4">
+              <span class="font-bold md:text-base text-sm">تاکسی اینترنتی</span>
+              <span class="text-gray-600 text-sm pt-1 hidden md:block"
+                >درخواست آنلاین خودرو</span
+              >
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-white p-4 md:p-2 rounded-xl cursor-pointer sm:w-[120px] md:w-[295px] sm:h-auto md:flex-row md:h-[90px] items-center"
+          >
+            <img
+              src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/taxi.svg"
+              class="w-[62px]"
+            />
+            <div class="flex flex-col md:mr-4">
+              <span class="font-bold md:text-base text-sm">تاکسی اینترنتی</span>
+              <span class="text-gray-600 text-sm pt-1 hidden md:block"
+                >درخواست آنلاین خودرو</span
+              >
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-white p-4 md:p-2 rounded-xl cursor-pointer sm:w-[120px] md:w-[295px] sm:h-auto md:flex-row md:h-[90px] items-center"
+          >
+            <img
+              src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/taxi.svg"
+              class="w-[62px]"
+            />
+            <div class="flex flex-col md:mr-4">
+              <span class="font-bold md:text-base text-sm">تاکسی اینترنتی</span>
+              <span class="text-gray-600 text-sm pt-1 hidden md:block"
+                >درخواست آنلاین خودرو</span
+              >
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-white p-4 md:p-2 rounded-xl cursor-pointer sm:w-[120px] md:w-[295px] sm:h-auto md:flex-row md:h-[90px] items-center"
+          >
+            <img
+              src="https://web-cdn.snapp.ir/snappir-marketing/images/ventures/taxi.svg"
+              class="w-[62px]"
+            />
+            <div class="flex flex-col md:mr-4">
+              <span class="font-bold md:text-base text-sm">تاکسی اینترنتی</span>
+              <span class="text-gray-600 text-sm pt-1 hidden md:block"
+                >درخواست آنلاین خودرو</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full flex items-center py-10 md:py-20">
+      <div
+        class="h-[150px] w-[340px] md:h-[292px] md:w-[1000px] flex justify-center mx-auto"
+      >
+        <div class="swiper mySwiper h-full rounded-xl w-[100%]">
+          <div class="swiper-wrapper">
+            <!-- اسلاید اول -->
+            <div class="swiper-slide w-[1000px] h-[100&]">
+              <img
+                src="./images/Food.jpg"
+                class="object-cover object-center w-[100%] h-[100%]"
+              />
+            </div>
+            <!-- اسلاید دوم -->
+            <div class="swiper-slide w-[100%] h-[100&]">
+              <img
+                src="./images/Driver.jpg"
+                class="object-cover object-center w-[100%] h-[100%]"
+              />
+            </div>
+            <!-- اسلاید سوم -->
+            <div class="swiper-slide w-[100%] h-[100&]">
+              <img
+                src="./images/Market.jpg"
+                class="object-cover object-center w-[100%] h-[100%]"
+              />
+            </div>
+          </div>
+          <!-- نشانگر صفحات -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col md:flex-row justify-between items-start h-[90vh] md:h-[50vh]"
+    >
+      <div
+        class="bg-[url(./images/super-app.jpg)] bg-cover w-[100%] h-[50vh] md:w-[50%] md:h-[100%]"
+      ></div>
+      <div class="w-[100%] md:w-[50%] h-[100%] p-10">
+        <h2 class="text-gray-800 text-lg font-bold md:text-2xl">
+          سوپر اپ اسنپ؛ پاسخی به تمام نیازها
+        </h2>
+        <p class="text-right text-gray-500 leading-8 mt-4">
+          اسنپ، اولین تاکسی اینترنتی ایران، بعد از پنج سال فعالیت در حوزه‌ی تردد
+          شهری، به یک سوپر‌اپ با خدمات متنوع تبدیل شد. سوپراپ اسنپ راه‌حلی جدید
+          و ساده است که با استفاده از آن تنها با یک اپلیکیشن می‌توانید علاوه بر
+          درخواست خودرو، موتور و وانت از خدمات متعددی از جمله سفارش غذا، پزشک و
+          مشاور آنلاین، خرید از سوپرمارکت‌ها و فروشگاه‌ها، اسباب‌کشی، خرید بلیط
+          (هواپیما، اتوبوس، قطار)، رزرو هتل، پرداخت قبض و خرید شارژ استفاده
+          کنید.
+        </p>
+      </div>
+    </div>
+    <div
+      class="flex flex-col md:flex-row items-center md:items-start h-[41vh] *:my-[50px] *:md:my-0 *:w-[90%] *:md:w-[255px] *:h-[190px] *:flex *:flex-col *:gap-3 justify-center gap-10 mt-[250px] md:-mt-16"
+    >
+      <div>
+        <div class="bg-[#F2F5F8] w-[100%] md:w-[255px] h-[190px] rounded-xl">
+          <img src="./images/210x190-easy.png" class="mx-auto" />
+        </div>
+        <span class="text-gray-800 font-bold text-lg">آسان</span>
+        <p class="text-sm text-gray-600">
+          برای استفاده از هر کدام از خدمات سوپر‌اپ اسنپ کافی است وارد اپلیکیشن
+          اسنپ شوید و روی آیکون مورد نظر بزنید.f
+        </p>
+      </div>
+      <div>
+        <div class="bg-[#F2F5F8] w-[100%] md:w-[255px] h-[190px] rounded-xl">
+          <img src="./images/210x190-fast.png" class="mx-auto" />
+        </div>
+        <span class="text-gray-800 font-bold text-lg">سریع</span>
+        <p class="text-sm text-gray-600">
+          قرار گرفتن خدمات مختلف در یک پلت‌فرم به صرفه‌جویی در زمان کمک می‌کند.
+          سوپراپ اسنپ پاسخی سریع به نیازهای رومزه‌ی شماست.
+        </p>
+      </div>
+      <div>
+        <div class="bg-[#F2F5F8] w-[100%] md:w-[255px] h-[190px] rounded-xl">
+          <img src="./images/210x190-eco.png" class="mx-auto" />
+        </div>
+        <span class="text-gray-800 font-bold text-lg">به صرفه</span>
+        <p class="text-sm text-gray-600">
+          سوپراپ اسنپ علاوه بر زمان در هزینه‌های شما نیز صرفه‌جویی می‌کند تا
+          بهترین خدمات را با قیمتی منطقی دریافت کنید.
+        </p>
+      </div>
+    </div>
+    <div class="bg-[#F2F5F8] p-12 mt-[390px] md:mt-1 md:px-11">
+      <h2 class="text-center text-gray-800 font-bold text-xl md:text-4xl">
+        در کمتر از ۱۰ دقیقه ثبت‌نام کنید و به ناوگان اسنپ بپیوندید.
+      </h2>
+      <p class="text-center text-gray-700 mt-6 text-lg">
+        بدون نیاز به مراجعه‌ی حضوری، از طریق این صفحه، تمام مراحل ثبت‌نام را
+        اینترنتی انجام دهید
+      </p>
+      <a
+        href="#"
+        class="text-white font-bold mx-auto mt-6 hover:bg-[#00DB75] transition bg-[#00D170] flex items-center justify-center text-center w-[170px] h-[48px] rounded-lg"
+        >ثبت‌نام رانندگان</a
+      >
+      <video
+        class="w-[1020] h-fit md:h-auto mx-auto my-10 rounded-xl"
+        src="https://web-cdn.snapp.ir/snappir-marketing/images/homepage/jazbranandeh1.mp4"
+        controls
+      ></video>
+      <div class="flex justify-center flex-wrap gap-3 w-full">
+        <div
+          class="flex flex-col md:flex-row items-center w-full bg-white rounded-xl md:w-[49%] py-8 px-4"
+        >
+          <img src="./images/180x100-income.png" class="w-[120px]" />
+          <div class="flex flex-col">
+            <span class="font-bold py-3">
+              درآمد تضمینی + پاداش‌های ماهانه و هفتگی</span
+            >
+            <span class="text-sm text-gray-700 leading-normal"
+              >با فعالیت در ناوگان اسنپ، علاوه بر کسب درآمد مستمر و امکان تسویه
+              در لحظه می‌توانید با شرکت در طرح‌های تشویقی مختلف، درآمد خود را
+              افزایش دهید.</span
+            >
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-center w-full bg-white rounded-xl md:w-[49%] py-8 px-4"
+        >
+          <img src="./images/180x100-income.png" class="w-[120px]" />
+          <div class="flex flex-col">
+            <span class="font-bold py-3">
+              درآمد تضمینی + پاداش‌های ماهانه و هفتگی</span
+            >
+            <span class="text-sm text-gray-700 leading-normal"
+              >با فعالیت در ناوگان اسنپ، علاوه بر کسب درآمد مستمر و امکان تسویه
+              در لحظه می‌توانید با شرکت در طرح‌های تشویقی مختلف، درآمد خود را
+              افزایش دهید.</span
+            >
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-center w-full bg-white rounded-xl md:w-[49%] py-8 px-4"
+        >
+          <img src="./images/180x100-income.png" class="w-[120px]" />
+          <div class="flex flex-col">
+            <span class="font-bold py-3">
+              درآمد تضمینی + پاداش‌های ماهانه و هفتگی</span
+            >
+            <span class="text-sm text-gray-700 leading-normal"
+              >با فعالیت در ناوگان اسنپ، علاوه بر کسب درآمد مستمر و امکان تسویه
+              در لحظه می‌توانید با شرکت در طرح‌های تشویقی مختلف، درآمد خود را
+              افزایش دهید.</span
+            >
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-center w-full bg-white rounded-xl md:w-[49%] py-8 px-4"
+        >
+          <img src="./images/180x100-income.png" class="w-[120px]" />
+          <div class="flex flex-col">
+            <span class="font-bold py-3">
+              درآمد تضمینی + پاداش‌های ماهانه و هفتگی</span
+            >
+            <span class="text-sm text-gray-700 leading-normal"
+              >با فعالیت در ناوگان اسنپ، علاوه بر کسب درآمد مستمر و امکان تسویه
+              در لحظه می‌توانید با شرکت در طرح‌های تشویقی مختلف، درآمد خود را
+              افزایش دهید.</span
+            >
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-center w-full bg-white rounded-xl md:w-[49%] py-8 px-4"
+        >
+          <img src="./images/180x100-income.png" class="w-[120px]" />
+          <div class="flex flex-col">
+            <span class="font-bold py-3">
+              درآمد تضمینی + پاداش‌های ماهانه و هفتگی</span
+            >
+            <span class="text-sm text-gray-700 leading-normal"
+              >با فعالیت در ناوگان اسنپ، علاوه بر کسب درآمد مستمر و امکان تسویه
+              در لحظه می‌توانید با شرکت در طرح‌های تشویقی مختلف، درآمد خود را
+              افزایش دهید.</span
+            >
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-center w-full bg-white rounded-xl md:w-[49%] py-8 px-4"
+        >
+          <img src="./images/180x100-income.png" class="w-[120px]" />
+          <div class="flex flex-col">
+            <span class="font-bold py-3">
+              درآمد تضمینی + پاداش‌های ماهانه و هفتگی</span
+            >
+            <span class="text-sm text-gray-700 leading-normal"
+              >با فعالیت در ناوگان اسنپ، علاوه بر کسب درآمد مستمر و امکان تسویه
+              در لحظه می‌توانید با شرکت در طرح‌های تشویقی مختلف، درآمد خود را
+              افزایش دهید.</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col items-center py-7">
+      <ul
+        class="flex flex-wrap flex-col md:flex-row justify-around w-[80%] mx-auto py-11 *:cursor-pointer *:text-gray-600 gap-5"
+      >
+        <li>فرصت‌های شغلی</li>
+        <li>بلاگ</li>
+        <li>شرایط و قوانین</li>
+        <li>پنل سازمانی</li>
+        <li>سوالات متداول</li>
+        <li>باشگاه رانندگان</li>
+        <li>ثبت نام راننده اسنپ</li>
+        <li>درباره ما</li>
+        <li>تماس با ما</li>
+      </ul>
+      <div class="flex *:size-20 ">
+        <img src="./images/namad.png" />
+        <img src="./images/logo (1).png" />
+        <img src="./images/logo (2).png" />
+      </div>
+    </div>
+    <script src="./cdns/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>
